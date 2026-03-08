@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official Turkana County Tourism Portal - Discover Lake Turkana, Koobi Fora, and the Cradle of Mankind. UNESCO World Heritage Sites and natural wonders.">
+    <meta name="keywords" content="Turkana, Kenya Tourism, Lake Turkana, Koobi Fora, Lodwar, Turkana County, UNESCO, Cradle of Mankind">
+    <title>Turkana County Tourism - Official Government Portal</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i0.wp.com/turkana.go.ke/wp-content/uploads/2022/06/cropped-TURK-LOGO.png?fit=256255&ssl=1" alt="Turkana County Logo">
+                <span>Turkana Tourism</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Discover Turkana</h1>
+            <p>The Cradle of Mankind - Where History Meets Natural Beauty</p>
+            <button onclick="window.location.href='explore.html'">
+                Explore Destinations
+            </button>
+        </div>
+    </section>
+
+    <section id="revenue" style="padding: 4rem 2rem; max-width: 1200px; margin: 0 auto;">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: #1e3c72; font-family: 'Playfair Display', serif;">Plan Your Visit</h2>
+        <div class="revenue-grid">
+            <div class="revenue-card">
+                <h3>Book Hotels</h3>
+                <p>Find the best accommodations in Turkana</p>
+                <a href="booking.html" class="btn">View Options</a>
+            </div>
+            <div class="revenue-card">
+                <h3>Tours & Packages</h3>
+                <p>Guided tours to historical sites</p>
+                <a href="booking.html" class="btn">Book Tour</a>
+            </div>
+            <div class="revenue-card">
+                <h3>Transport Services</h3>
+                <p>Airport transfers and vehicle rentals</p>
+                <a href="booking.html" class="btn">Get Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Turkana County Government - Tourism Department</h3>
+        <div class="social-links" style="margin: 1.5rem 0;">
+            <a href="https://www.facebook.com/TurkanaCountyGov" target="_blank" aria-label="Facebook" style="display: inline-block; margin: 0 10px;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://twitter.com/TurkanaCountyKE" target="_blank" aria-label="Twitter" style="display: inline-block; margin: 0 10px;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+        </div>
+            <p>Email: info@turkana.go.ke</p>
+            <p>Phone: +254 798 783 077</p>
+            <p>Location: P.O. Box 11-30500, Lodwar, Turkana County, Kenya</p>
+            <p style="margin-top: 1rem;">&copy; <span id="year"></span> Turkana County Government. All rights reserved.</p>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Ministry of Tourism, Culture, Natural Resources & Climate Change</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

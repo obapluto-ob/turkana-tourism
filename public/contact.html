@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Turkana County Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://turkana.go.ke/wp-content/uploads/2022/06/cropped-TURK-LOGO.png" alt="Turkana County Logo">
+                <span>Turkana Tourism</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact-form" style="margin-top: 80px;">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Have questions about visiting Turkana? We're here to help plan your perfect trip to the Cradle of Mankind.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="icon">Email</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>info@turkana.go.ke</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">Phone</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+254 798 783 077</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">Location</span>
+                        <div>
+                            <strong>Location</strong>
+                            <p>P.O. Box 11-30500, Lodwar, Turkana County, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">Officer</span>
+                        <div>
+                            <strong>Tourism Officer</strong>
+                            <p>Cecilia Mwajuma - Chief Officer, Tourism, Culture & Heritage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Inquiry Type</option>
+                        <option value="hotel">Hotel Booking</option>
+                        <option value="tour">Tour Package</option>
+                        <option value="general">General Information</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Turkana County Government - Tourism Department</h3>
+            <div class="social-links" style="margin: 1.5rem 0;">
+                <a href="https://www.facebook.com/TurkanaCountyGov" target="_blank" aria-label="Facebook" style="display: inline-block; margin: 0 10px;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://twitter.com/TurkanaCountyKE" target="_blank" aria-label="Twitter" style="display: inline-block; margin: 0 10px;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+            </div>
+            <p>Email: info@turkana.go.ke</p>
+            <p>Phone: +254 798 783 077</p>
+            <p>Location: P.O. Box 11-30500, Lodwar, Turkana County, Kenya</p>
+            <p style="margin-top: 1rem;">&copy; <span id="year"></span> Turkana County Government. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Ministry of Tourism, Culture, Natural Resources &amp; Climate Change</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
